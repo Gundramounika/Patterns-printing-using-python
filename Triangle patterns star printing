@@ -1,0 +1,183 @@
+#Triangle patterns star printing
+
+#increasing Right triangle pattern
+n=int(input("enter no of rows value :"))
+for i in range(n): #outer loop for rows
+    for j in range(i+1): #inner loop for column
+        print("*",end=" ")
+    print()
+#output
+enter no of rows value :4
+* 
+* * 
+* * * 
+* * * * 
+
+#increasing Left triangle pattern
+n=int(input("enter no of rows value :"))
+for i in range(n): #outer loop for rows
+    for j in range(n-i): #inner loop for spaces column
+        print(" ",end=" ")
+    for j in range(i+1): #inner loop for column
+        print("*",end=" ")
+    print()
+#output
+enter no of rows value :4
+        * 
+      * * 
+    * * * 
+  * * * * 
+
+#Decreasing Right triangle 
+n=int(input("enter no of rows value  :"))
+for i in range(n): #outer loop for rows
+    for j in range(n-i): #inner loop for column
+        print("*",end=" ")
+    print()
+#output
+enter no of rows value :4
+* * * * 
+* * * 
+* * 
+* 
+
+#Decreasing Left triangle 
+n=int(input("enter no of rows value :"))
+for i in range(n): #outer loop for rows
+    for j in range(i+1): #inner loop for spaces column
+        print(" ",end=" ")
+    for j in range(n-i): #inner loop for column
+        print("*",end=" ")
+    print()
+#output 
+enter no of rows value :4
+  * * * * 
+    * * * 
+      * * 
+        * 
+
+#Left parallelogram pattern
+n=int(input("enter no of rows value :"))
+for i in range(n): #outer loop for rows
+    for j in range(n-i): #inner loop for spaces column
+        print(" ",end=" ")
+    for j in range(i): #inner loop for column
+        print("*",end=" ")
+    for j in range(n-i): #inner loop for spaces column
+        print("*",end=" ")
+    print()
+#output
+enter no of rows value :4
+        * * * * 
+      * * * * 
+    * * * * 
+  * * * * 
+
+#Hill pattern
+n=int(input("enter no of rows value :"))
+for i in range(n): #outer loop for rows
+    for j in range(n-i): #inner loop for column
+        print(" ",end=" ")
+    for j in range(i+1): #inner loop for column
+        print("*",end=" ")
+    for j in range(i): #inner loop for column
+        print("*",end=" ")    
+    print()
+#output
+enter no of rows value :4
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+
+#Reverse Hill pattern
+n=int(input("enter no of rows value :"))
+for i in range(n): #outer loop for rows
+    for j in range(i+1): #inner loop for column
+        print(" ",end=" ")
+    for j in range(n-i): #inner loop for column
+        print("*",end=" ")
+    for j in range((n-1)-i): #inner loop for column
+        print("*",end=" ")    
+    print()
+ #output
+ enter no of rows value :4
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+
+# Hill pattern
+n=int(input("enter no of rows value :"))
+for i in range(n-1): #outer loop for rows
+    for j in range(n-i): #inner loop for column
+        print(" ",end=" ")
+    for j in range(i+1): #inner loop for column
+        print("*",end=" ")
+    for j in range(i): #inner loop for column
+        print("*",end=" ")
+    print()
+for i in range(n): #outer loop for rows
+    for j in range(i+1): #inner loop for column
+        print(" ",end=" ")
+    for j in range((n-1)-i): #inner loop for column
+        print("*",end=" ")
+    for j in range(n-i): #inner loop for column
+        print("*",end=" ")   
+    print()
+ #output
+ enter no of rows value :4
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+    * * * * * 
+      * * * 
+        * 
+  
+# Left pascal's triangle
+n=int(input("enter no of rows value :"))
+for i in range(n-1): #outer loop for rows
+    for j in range(i+1): #inner loop for column
+        print("*",end=" ")
+    for j in range((n)-i): #inner loop for column
+        print(" ",end=" ")
+    print()
+for i in range(n): #outer loop for down triangle rows
+    for j in range(n-i): #inner loop for column
+        print("*",end=" ")   
+    print()
+#output
+enter no of rows value :4
+*         
+* *       
+* * *     
+* * * * 
+* * * 
+* * 
+* 
+
+# Right pascal's triangle
+n=int(input("enter no of rows value :"))
+for i in range(n-1): #outer loop for rows
+    for j in range(n-i): #inner loop for column
+        print(" ",end=" ")
+    for j in range(i+1): #inner loop for column
+        print("*",end=" ")
+    print()
+for i in range(n): #outer loop for down triangle rows
+    for j in range(i+1): #inner loop for column
+        print(" ",end=" ")
+    for j in range(n-i): #inner loop for column
+        print("*",end=" ")   
+    print()
+#output
+enter no of rows value :4
+        * 
+      * * 
+    * * * 
+  * * * * 
+    * * * 
+      * * 
+        *
+
